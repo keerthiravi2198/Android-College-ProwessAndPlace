@@ -45,11 +45,10 @@ public class TestAdapter {
         mDbHelper.close();
     }
 
-    public Cursor getTestData(String type) {
+    public Cursor getTestData(String company, String type) {
 
         try {
-            Cursor mCur = mDb.query("questions", null, "TYPE='" +type +"'", null, null, null, null);
-            Log.i("GOT", "getTestData: ");
+            Cursor mCur = mDb.query("questions", null, "TYPE='" +type +"' AND COMP='" + company +"'", null, null, null, null);
             return mCur;
         }
         catch (SQLException e) {

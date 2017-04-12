@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">P and P</string>
+    <string-array name="Company">
+        <item>Infosys</item>
+        <item>Wipro</item>
+        <item>Cognizant</item>
+        <item>Accenture</item>
+    </string-array>
+    <string-array name="Type">
+        <item>Reasoning</item>
+        <item>Verbal</item>
+        <item>Aptitude</item>
+    </string-array>
 </resources>

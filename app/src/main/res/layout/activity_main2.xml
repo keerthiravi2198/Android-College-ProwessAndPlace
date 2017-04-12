@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/commonView"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"/>
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/finalsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT TEST FOR REVIEW"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    <ListView
+        android:id="@+id/commonView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"></ListView>
+
+</LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context="com.example.pandp.MainActivity">
 
     <LinearLayout
@@ -17,43 +18,66 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:padding="16dp"
-            android:text="Welcome to the app! Choose any option below!"
+            android:text="Welcome to Prowess and Place!"
             android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textColor="#fce4ec"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:paddingBottom="72dp"
+            android:text="Choose the Company and the Test type to Continue"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/company"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="vertical"
-            android:padding="24dp">
+            android:layout_margin="8dp"
+            android:background="@drawable/rec"
+            android:dropDownWidth="250dp"
+            android:elevation="32dp"
+            android:entries="@array/Company"
+            android:gravity="center"
+            android:padding="24dp"
+            android:popupBackground="@drawable/rec" />
 
-            <RadioButton
-                android:id="@+id/a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Aptitude"
-                android:textSize="18dp" />
-
-            <RadioButton
-                android:id="@+id/r"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Reasoning"
-                android:textSize="18sp" />
-        </RadioGroup>
-
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/rec"
+            android:dropDownWidth="250dp"
+            android:elevation="32dp"
+            android:entries="@array/Type"
+            android:gravity="center"
+            android:padding="24dp"
+            android:popupBackground="@drawable/rec" />
 
 
         <Button
             android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Go to Questions" />
+            android:layout_marginTop="42dp"
+            android:background="#f06292"
+            android:elevation="100dp"
+            android:text="ATTEMPT TEST"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
