@@ -91,7 +91,7 @@ public class Main2Activity extends AppCompatActivity {
                 ArrayList2.add(new Questions(qNo, Question, optionA, optionB, optionC, optionD, answer));
                 qNo++;
             }
-            QuestionsAdapter2 Adapter2 = new QuestionsAdapter2(this, ArrayList);
+            QuestionsAdapter Adapter2 = new QuestionsAdapter(this, ArrayList);
             listView = (ListView) findViewById(R.id.commonView);
             listView.setAdapter(Adapter2);
         } finally {
